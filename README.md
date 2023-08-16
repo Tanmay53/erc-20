@@ -1,66 +1,19 @@
-## Foundry
+## ERC20 Token : Earth Token : ET
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple implentation of an ERC20 token with the help of [Foundry]() an [Openzeppelin](https://github.com/OpenZeppelin)
 
-Foundry consists of:
+Mentored by [Pattrick Collins](https://github.com/PatrickAlphaC).
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### Setup Requirements
 
-## Documentation
+* [Foundry](https://book.getfoundry.sh/getting-started/installation)
 
-https://book.getfoundry.sh/
+### Setup Process
 
-## Usage
+* Run `make install` to import all the required packages.
+* Run `make build` to compile the contracts.
+* Run `make test` to test the contracts.
+* Run `make anvil` to start a local Anvil chain.
+* Run `make deploy` to deploy the token locally on Anvil
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+More command functionalities available in the [Makefile](./Makefile).
